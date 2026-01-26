@@ -1,6 +1,6 @@
 name: cool_animation_flutter
-description: "A package for easily applying cool animations"
-version: 0.0.1
+description: "Flutter에서 SlideFadeIn 등 멋진 애니메이션을 쉽고 간결하게 적용할 수 있는 패키지입니다. 방향, 지연, 순차 애니메이션, 가시성 기반 트리거 등 다양한 기능을 제공합니다."
+version: 0.0.2
 homepage: https://github.com/yundal8755/cool_animation_flutter
 
 environment:

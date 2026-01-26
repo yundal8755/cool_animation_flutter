@@ -1,9 +1,9 @@
 
-<h1 align="center">cool_animation ✨</h1>
+<h1 align="center">cool_animation_flutter ✨</h1>
 ![](https://velog.velcdn.com/images/yun_dal/post/f24c0c78-2e4b-40bc-99db-e88316a8210b/image.gif)
 
-[![pub package](https://img.shields.io/pub/v/cool_animation.svg)](https://pub.dev/packages/cool_animation)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/yundal8755/cool_animation/blob/main/LICENSE)
+[![pub package](https://img.shields.io/pub/v/cool_animation_flutter.svg)](https://pub.dev/packages/cool_animation_flutter)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/yundal8755/cool_animation_flutter/blob/main/LICENSE)
 
 Flutter에서 멋진 애니메이션을 아주 쉽고 간결하게 적용할 수 있도록 도와주는 패키지입니다. 
 
@@ -13,7 +13,7 @@ Flutter에서 멋진 애니메이션을 아주 쉽고 간결하게 적용할 수
 - `delay`와 `buildSequentialAnimations`를 사용하여 리스트나 그룹 요소에 순차적인 애니메이션을 쉽게 적용할 수 있습니다.
 - 화면 밖에 있는 위젯이 스크롤되어 화면에 보일 때 애니메이션이 시작되도록 설정할 수 있습니다 (`triggerOnVisible`).
 - 방향, 지속 시간, 곡선, 애니메이션 시작 오프셋 등을 자유롭게 조절 가능합니다.
-- 활용 예시는 [예제](https://github.com/yundal8755/cool_animations/blob/main/example/example_demo.dart)를 확인해주세요
+- 활용 예시는 [예제](https://github.com/yundal8755/cool_animation_flutter/blob/main/example/lib/main.dart)를 확인해주세요
 - SlideFadeIn에 대한 자세한 내용은 [기술블로그 포스팅](https://velog.io/@yun_dal/Flutter-%ED%86%A0%EC%8A%A4-%EC%8A%A4%ED%83%80%EC%9D%BC%EC%9D%98-Slide-Up-%EC%9D%B8%ED%84%B0%EB%A0%89%EC%85%98-%EB%A7%8C%EB%93%A4%EA%B8%B0)을 참고해주세요
 
 <br>
@@ -23,7 +23,7 @@ Flutter에서 멋진 애니메이션을 아주 쉽고 간결하게 적용할 수
 
 ```yaml
 dependencies:
-  cool_animation: ^0.0.1
+  cool_animation_flutter: ^0.0.2
 ```
 
 <br>
@@ -32,7 +32,7 @@ dependencies:
 ### 1️⃣ SlideFadeIn
 가장 기본적인 형태로, 하단에서 위로 페이드 인되며 나타납니다.
 ```dart
-import 'package:cool_animation/cool_animation.dart';
+import 'package:cool_animation_flutter/cool_animation_flutter.dart';
 
 SlideFadeIn(
   child: Text('안녕하세요!'),

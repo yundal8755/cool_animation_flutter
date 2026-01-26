@@ -1,0 +1,12 @@
+name: cool_animation_flutter_example
+description: Example app for cool_animation_flutter package
+publish_to: "none"
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cool_animation_flutter:
+    path: ../
