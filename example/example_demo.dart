@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:cool_animation/cool_animation.dart';
+import 'package:cool_animation_flutter/cool_animation_flutter.dart';
 
 class ExampleDemo extends StatelessWidget {
   const ExampleDemo({super.key});

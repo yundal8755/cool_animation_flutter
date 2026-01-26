@@ -1,7 +1,7 @@
-name: cool_animation
+name: cool_animation_flutter
 description: "A package for easily applying cool animations"
 version: 0.0.1
-homepage: https://github.com/yundal8755/cool_animation
+homepage: https://github.com/yundal8755/cool_animation_flutter
 
 environment:
   sdk: ">=3.4.0 <4.0.0"

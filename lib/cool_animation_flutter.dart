@@ -3,7 +3,7 @@
 /// As of January 26, 2026, only the SlideFadeIn animation is available.
 ///
 
-library cool_animation;
+library cool_animation_flutter;
 
 /// Core
 export 'src/slide_fade_animatable.dart';
