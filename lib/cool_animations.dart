@@ -1,7 +1,6 @@
 ///
-/// - Flutter 앱에 부드럽고 자연스러운 애니메이션을 손쉽게 적용할 수 있습니다.
-/// - 다양한 애니메이션 위젯과 컨트롤러를 제공합니다.
-/// - 2026.01.26(월) 현재는 SlideFadeIn 애니메이션만 제공됩니다.
+/// A package that provides various animation widgets and controllers.
+/// As of January 26, 2026, only the SlideFadeIn animation is available.
 ///
 
 library cool_animations;
