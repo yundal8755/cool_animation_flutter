@@ -11,12 +11,14 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+# cool_animation
+
+A package for easily applying cool animations in Flutter.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- **SlideFadeIn**: A widget that combines slide and fade animations.
+- **Sequential Animations**: Easily build sequential animations using `delay`.
 
 ## Getting started
 
