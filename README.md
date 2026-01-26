@@ -1,13 +1,16 @@
 
 <h1 align="center">cool_animation_flutter ✨</h1>
-![](https://velog.velcdn.com/images/yun_dal/post/f24c0c78-2e4b-40bc-99db-e88316a8210b/image.gif)
-
-[![pub package](https://img.shields.io/pub/v/cool_animation_flutter.svg)](https://pub.dev/packages/cool_animation_flutter)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/yundal8755/cool_animation_flutter/blob/main/LICENSE)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/562364d8-5256-43a8-8552-a4962dd8ccb8" width="60%" />
+</p>
 
 Flutter에서 멋진 애니메이션을 아주 쉽고 간결하게 적용할 수 있도록 도와주는 패키지입니다. 
+복잡한 `AnimationController`와 `StatefulWidget`을 매번 만들 필요 없이, 위젯을 감싸는 것만으로 부드럽고 자연스러운 인터랙션을 구현할 수 있습니다.
+단순한 등장 효과부터 리스트가 순차적으로 올라오는 고급 연출까지, **가장 적은 코드로 가장 멋진 UX**를 만들어보세요.
 
 <br>
+
+
 
 ## Feature
 - `delay`와 `buildSequentialAnimations`를 사용하여 리스트나 그룹 요소에 순차적인 애니메이션을 쉽게 적용할 수 있습니다.
@@ -91,8 +94,3 @@ Column(
 | `duration` | `Duration` | 애니메이션 재생 시간 (기본 400ms) |
 | `delay` | `Duration` | 애니메이션 시작 전 지연 시간 |
 | `triggerOnVisible` | `bool` | 화면에 보일 때 시작 여부 (기본 false) |
-
-<br>
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](https://www.notion.so/LICENSE) file for details.
