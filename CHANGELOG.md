@@ -1,10 +1,14 @@
+## 0.0.3
+* Fixed pub.dev score issues (English metadata)
+* Added bilingual README support (English & Korean)
+
 ## 0.0.2
-* 패키지 메타데이터 개선 (description 확장, example 구조 표준화)
-* README.md 패키지 이름 및 링크 수정
-* 표준 Flutter example 앱 추가
+* Improved package metadata (expanded description, standardized example structure)
+* Fixed package name and links in README.md
+* Added standard Flutter example app
 
 ## 0.0.1
-* SlideFadeIn 위젯 초기 릴리즈
-* buildSequentialAnimations 헬퍼 함수 제공
-* 8가지 슬라이드 방향 지원
-* 가시성 기반 애니메이션 트리거 기능
+* Initial release of SlideFadeIn widget
+* Provided buildSequentialAnimations helper function
+* Supported 8 slide directions
+* Added visibility-based animation trigger feature
