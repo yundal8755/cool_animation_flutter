@@ -1,6 +1,6 @@
 name: cool_animation_flutter
 description: "A Flutter package for easy and concise animations. Supports direction, delay, sequential animations, and visibility-based triggers."
-version: 0.0.3
+version: 0.0.4
 repository: https://github.com/yundal8755/cool_animation_flutter
 issue_tracker: https://github.com/yundal8755/cool_animation_flutter/issues
 

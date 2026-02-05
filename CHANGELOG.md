@@ -1,3 +1,9 @@
+## 0.0.4
+* Added `ScaleBounce` animation widget
+* Organized source code into feature-based subdirectories (`animations`, `builders`)
+* Updated README with animation GIFs and centered layout
+* Improved package metadata for better pub.dev score
+
 ## 0.0.3
 * Fixed pub.dev score issues (English metadata)
 * Added bilingual README support (English & Korean)
