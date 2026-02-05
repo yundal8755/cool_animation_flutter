@@ -5,8 +5,8 @@ import 'package:visibility_detector/visibility_detector.dart';
 ///
 /// 크기가 커지면서 투명도가 증가하고 정점에서 바운스되는 애니메이션 위젯.
 ///
-class ScaleBounceIn extends StatefulWidget {
-  const ScaleBounceIn({
+class ScaleBounce extends StatefulWidget {
+  const ScaleBounce({
     super.key,
     required this.child,
     this.duration = const Duration(milliseconds: 600),
@@ -46,10 +46,10 @@ class ScaleBounceIn extends StatefulWidget {
   final VoidCallback? onCompleted;
 
   @override
-  State<ScaleBounceIn> createState() => _ScaleBounceInState();
+  State<ScaleBounce> createState() => _ScaleBounceState();
 }
 
-class _ScaleBounceInState extends State<ScaleBounceIn>
+class _ScaleBounceState extends State<ScaleBounce>
     with SingleTickerProviderStateMixin {
   late final AnimationController _controller;
   late Animation<double> _scaleAnimation;
@@ -70,7 +70,9 @@ class _ScaleBounceInState extends State<ScaleBounceIn>
     _initializeAnimation();
   }
 
+  /// 애니메이션 설정ㅣ
   void _setupAnimations() {
+    // 스케일 애니메이션
     // 60% 시간은 커지고, 40% 시간은 다시 줄어들며 바운스 효과 구현
     _scaleAnimation = TweenSequence<double>([
       TweenSequenceItem(
@@ -85,6 +87,8 @@ class _ScaleBounceInState extends State<ScaleBounceIn>
       ),
     ]).animate(_controller);
 
+    // 투명도 애니메이션
+    // 70% 시간 동안 투명도 증가
     _opacityAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
       CurvedAnimation(
         parent: _controller,
@@ -93,6 +97,7 @@ class _ScaleBounceInState extends State<ScaleBounceIn>
     );
   }
 
+  /// 애니메이션 초기화
   void _initializeAnimation() {
     final shouldDisable = !widget.enabled || _isReduceMotionEnabled;
 
@@ -108,7 +113,7 @@ class _ScaleBounceInState extends State<ScaleBounceIn>
       .instance.platformDispatcher.accessibilityFeatures.reduceMotion;
 
   @override
-  void didUpdateWidget(covariant ScaleBounceIn oldWidget) {
+  void didUpdateWidget(covariant ScaleBounce oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.duration != widget.duration) {
       _controller.duration = widget.duration;
@@ -119,6 +124,7 @@ class _ScaleBounceInState extends State<ScaleBounceIn>
     }
   }
 
+  /// 애니메이션 상태 변경 처리
   void _handleAnimationStatus(AnimationStatus status) {
     if (status == AnimationStatus.completed) {
       widget.onCompleted?.call();
@@ -126,6 +132,7 @@ class _ScaleBounceInState extends State<ScaleBounceIn>
     }
   }
 
+  /// 자동 재생 스케줄링
   Future<void> _scheduleAutoPlay() async {
     if (_didAnimateOnce) return;
     if (widget.delay != null && widget.delay! > Duration.zero) {
@@ -135,6 +142,7 @@ class _ScaleBounceInState extends State<ScaleBounceIn>
     _controller.forward();
   }
 
+  /// 가시성 변경 처리
   void _onVisibilityChanged(VisibilityInfo info) {
     if (_didAnimateOnce || !widget.enabled || _isReduceMotionEnabled) return;
 

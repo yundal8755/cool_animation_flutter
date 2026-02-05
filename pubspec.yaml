@@ -1,7 +1,8 @@
 name: cool_animation_flutter
-description: "A package that makes it easy and concise to apply cool animations like SlideFadeIn in Flutter. It provides various features such as direction, delay, sequential animation, and visibility-based trigger."
+description: "A Flutter package for easy and concise animations. Supports direction, delay, sequential animations, and visibility-based triggers."
 version: 0.0.3
-homepage: https://github.com/yundal8755/cool_animation_flutter
+repository: https://github.com/yundal8755/cool_animation_flutter
+issue_tracker: https://github.com/yundal8755/cool_animation_flutter/issues
 
 environment:
   sdk: ">=3.4.0 <4.0.0"

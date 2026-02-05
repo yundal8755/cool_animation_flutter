@@ -1,17 +1,17 @@
 ///
 /// A package that provides various animation widgets and controllers.
-/// As of January 26, 2026, only the SlideFadeIn animation is available.
 ///
 
 library cool_animation_flutter;
 
-/// Core
-export 'src/slide_fade_animatable.dart';
-export 'src/slide_fade_controller.dart';
-export 'src/slide_direction.dart';
+/// Slide Animation
+export 'src/animations/slide_fade_in/slide_fade_in.dart';
+export 'src/animations/slide_fade_in/slide_direction.dart';
+export 'src/animations/slide_fade_in/slide_fade_animatable.dart';
+export 'src/animations/slide_fade_in/slide_fade_controller.dart';
 
-/// Animations
-export 'src/slide_fade_in.dart';
+/// Scale Animation
+export 'src/animations/scale_bounce/scale_bounce.dart';
 
-/// Utils
-export 'src/sequential_builder.dart';
+/// Builders
+export 'src/builders/sequential_builder.dart';
